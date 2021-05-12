@@ -10,7 +10,6 @@ using System.Windows.Documents;
 using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
-using System.Windows.Navigation;
 using System.Windows.Shapes;
 
 namespace AccountingOfOrders
@@ -23,43 +22,6 @@ namespace AccountingOfOrders
         public MainWindow()
         {
             InitializeComponent();
-        }
-
-        private void ExitButton_MouseDown(object sender, MouseButtonEventArgs e)
-        {
-            this.Close();
-        }
-
-        private void MinButton_MouseDown(object sender, MouseButtonEventArgs e)
-        {
-            this.WindowState = WindowState.Minimized;
-        }
-
-        private void Toolbar_MouseDown(object sender, MouseButtonEventArgs e)
-        {
-            if (e.ChangedButton == MouseButton.Left)
-            {
-                this.DragMove();
-            }
-        }
-
-        private void LogoContainer_MouseDown(object sender, MouseButtonEventArgs e)
-        {
-            if (e.ChangedButton == MouseButton.Left)
-            {
-                this.DragMove();
-            }
-        }
-
-        private void Button_Click(object sender, RoutedEventArgs e)
-        {
-            string login = TBLogin.Text;
-            string password = TBPassword.Text;
-            string query = "SELECT id_user FROM users where login=\"" + login + "\" and password=\"" + password + "\"";
-        }
-
-        private void Window_Initialized(object sender, EventArgs e)
-        {
         }
     }
 }
