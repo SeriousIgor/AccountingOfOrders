@@ -11,6 +11,6 @@ namespace AccountingOfOrders
     {
         public DbSet<User> Users { get; set; }
 
-        public ApplicationContext() : base("DataBaseConnection"){ }
+        public ApplicationContext() : base("DataBaseConnection"){}
     }
 }
