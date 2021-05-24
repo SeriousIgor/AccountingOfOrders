@@ -25,3 +25,6 @@ D:\Software\VSrepos\AccountingOfOrders\obj\Debug\LoginWindow.g.cs
 D:\Software\VSrepos\AccountingOfOrders\obj\Debug\LoginWindow.baml
 D:\Software\VSrepos\AccountingOfOrders\obj\Debug\MainWindow.g.cs
 D:\Software\VSrepos\AccountingOfOrders\obj\Debug\MainWindow.baml
+D:\Software\VSrepos\AccountingOfOrders\bin\Debug\nunit.framework.dll
+D:\Software\VSrepos\AccountingOfOrders\bin\Debug\nunit.framework.pdb
+D:\Software\VSrepos\AccountingOfOrders\bin\Debug\nunit.framework.xml

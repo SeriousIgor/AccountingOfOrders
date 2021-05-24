@@ -5,8 +5,25 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:AccountingOfOrders"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800" ResizeMode="CanMinimize">
+        Title="MainWindow" Height="630" Width="1050" ResizeMode="CanMinimize" WindowStyle="None" WindowStartupLocation="CenterScreen">
+     <Window.Background>
+        <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+            <GradientStop Color="#FF2D2D30" Offset="0"/>
+            <GradientStop Color="#FF1D222C" Offset="1"/>
+            <GradientStop Color="#FF1F2633" Offset="0.51"/>
+        </LinearGradientBrush>
+    </Window.Background>
     <Grid>
-        
+        <Grid.RowDefinitions>
+            <RowDefinition Height="30"/>
+            <RowDefinition Height="600"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="350"/>
+            <ColumnDefinition Width="700"/>
+        </Grid.ColumnDefinitions>
+        <Grid Name="Toolbar" Background="#FF1B1B1C" Grid.Row="0" Grid.ColumnSpan="2" MouseDown="Toolbar_MouseDown">
+            
+        </Grid>
     </Grid>
 </Window>

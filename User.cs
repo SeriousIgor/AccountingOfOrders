@@ -1,18 +1,23 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
 namespace AccountingOfOrders
 {
-    class User
+    public class User
     {
-        private int id_user;
-        private string login, password, name, surname, admin;
+        [Key]
+        public int id_user { get; set; }
+
+        private string login, password, name, surname;
+        int admin;
+
         public User() { }
 
-        public User(int id_user, string login, string password, string name, string surname, string admin)
+        public User(int id_user, string login, string password, string name, string surname, int admin)
         {
             this.id_user = id_user;
             this.login = login;
@@ -26,7 +31,6 @@ namespace AccountingOfOrders
         public string Password { get => password; set => password = value; }
         public string Name { get => name; set => name = value; }
         public string Surname { get => surname; set => surname = value; }
-        public string Admin { get => admin; set => admin = value; }
-        public int Id_user { get => id_user; set => id_user = value; }
+        public int Admin { get => admin; set => admin = value; }
     }
 }

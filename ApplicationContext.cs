@@ -7,7 +7,7 @@ using System.Data.Entity;
 
 namespace AccountingOfOrders
 {
-    class ApplicationContext : DbContext
+    public class ApplicationContext : DbContext
     {
         public DbSet<User> Users { get; set; }
 

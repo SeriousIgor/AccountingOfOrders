@@ -53,14 +53,18 @@ namespace AccountingOfOrders
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
-            string login = TBLogin.Text;
-            string password = TBPassword.Text;
-            string query = "SELECT id_user FROM users where login=\"" + login + "\" and password=\"" + password + "\"";
-            if (true)
+            string login = TBLogin.Text.Trim();
+            string password = TBPassword.Text.Trim();
+            if (DBOperations.LogIn(login, password))
             {
+                //MessageBox.Show(DBOperations.usersList());
                 MainWindow window = new MainWindow();
                 window.Show();
                 this.Close();
+            }
+            else
+            {
+                MessageBox.Show("Невірно введено дані", "Увага");
             }
         }
 
